@@ -38,7 +38,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    flex-direction: row;
     margin-top: 15px;
 }
 
@@ -77,6 +77,17 @@ body {
     width: 138.05px;
     height: 100%;
 }
+.flex-confirm-esquerda a{
+    text-decoration: none;
+    color: black;
+}
+.flex-confirm-esquerda a:visited {
+    color: black;
+}
+
+.flex-confirm-esquerda a:hover {
+    text-decoration: underline;
+}
 
 #continuar-cadastro{
     border: none;
@@ -93,6 +104,22 @@ body {
     cursor: pointer;
 }
 
+#terminar-cadastro{
+    border: none;
+    background-color: #FF8800;
+    color: white;
+    padding: 6px 30px;
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+#terminar-cadastro:hover {
+    cursor: pointer;
+}
+
 #title-cadastro {
     font-size: 65px;
 
@@ -105,4 +132,9 @@ body {
 }
 .active {
     background-color: #FF8800;
+}
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }

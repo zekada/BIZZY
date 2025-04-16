@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/cadastro.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+
+    <div class="container-cadastro container">
+
+
+        <div class="flex-cadastro">
+
+            <div class="form-cadastro">
+                <h1 id="title-cadastro">Cadastro</h1>
+
+                <p class="title-input">CPF/CNPJ</p>
+                <input placeholder="Digite seu CPF ou CNPJ..." type="text" class="input-cadastro" id="cpf-cnpj-cadastro">
+
+                <p class="title-input">CEP</p>
+                <input placeholder="Digite seu CEP..." type="text" class="input-cadastro" id="cep-cadastro">
+
+                <p class="title-input">Complemento</p>
+                <input placeholder="Digite o complemento..." type="text" class="input-cadastro" id="complemento-cadastro">
+
+                <p class="title-input">Telefone</p>
+                <input placeholder="Digite seu telefone..." type="tel" class="input-cadastro" id="telefone-cadastro">
+
+                <div class="flex-confirm">
+                    <div class="flex-confirm-esquerda">
+                        <a href="login.html">Já tenho conta</a>
+                    </div>
+
+                    <div class="flex-confirm-centro">
+                        <div class="pass-circles">
+                            <div id="pass02" class="passCircle non-active">
+                            </div>
+                            <div id="pass01" class="passCircle active">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="flex-confirm-direita">
+
+                        <button onclick="terminarcadastro()" id="terminar-cadastro">
+                            Continuar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cadastro-img">
+                <img src="../assets/img/bonecos.svg" alt="" width="800px">
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
