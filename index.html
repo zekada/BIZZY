@@ -1,142 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bizzy</title>
 
-    <link rel="stylesheet" href="src/css/index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bizzy</title>
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="src/css/index.css" />
 
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-  <body>
-    <header class="header-homepage">
-      <div class="logo-header">
-        <a href="index.html">
-          <img class="logo" src="assets/img/logo-branca.svg" alt="Logo Bizzy" />
-        </a>
-      </div>
-      <div class="botoes-header">
-        <a href="#"><i class='bx bxs-conversation'></i></a>
-        <a href="#"><i class='bx bxs-bell' ></i></a>
-        <a class="verify" href="#">Verifique-se</a></a>
-        <a class="profile" href="#"><img class="profilepic" src="../assets/img/usuarioprofile.svg" alt="Perfil"></a>
-      </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
 
-    </header>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
 
-
-
-
-    <!-- BANNER -->
-
-
-
-
-    <div class="banner-homepage">
-      <div class="banner-grid">
-        <div class="title-banner">
-          <h1>Find or offer a</h1>
-          <h1 id="title-2-banner">service near you</h1>
-        </div>
-
-
-        <div class="barra-pesquisa">
-          <input
-            id="input-pesquisa"
-            type="text"
-            onclick="pesquisa()"
-            placeholder="Search a service"
-          />
-
-
-          <button id="botao-confirmar" onclick="pesquisaConfirmar()">
-            C
-          </button>
-        </div>
-      </div>
+<body>
+  <header class="header-homepage">
+    <div class="logo-header">
+      <a href="index.html">
+        <img class="logo" src="assets/img/logo-branca.svg" alt="Logo Bizzy" />
+      </a>
+    </div>
+    <div class="botoes-header">
+      <a href="#"><i class='bx bxs-conversation'></i></a>
+      <a href="#"><i class='bx bxs-bell'></i></a>
+      <a class="verify" href="#">Verifique-se</a></a>
+      <a class="profile" href="#"><img class="profilepic" src="../assets/img/usuarioprofile.svg" alt="Perfil"></a>
     </div>
 
 
-
-
-    <!-- FILTROS -->
-
+  </header>
 
 
 
 
-
-    <div class="filters container">
-      <div class="filtros-containerzinho">
-      <div id="filtro01">
-        <p class="title-filters">Ordenar por</p>
+  <!-- BANNER -->
 
 
-        <div class="filtro-container01">
-          <button class="filtro-btn orange-filter">
-            Sugestões
-          </button>
-        </div>
-      </div>
-      <div id="filtro02">
-        <p class="title-filters">Preço</p>
 
 
-        <div class="filtro-container02">
-          <button class="filtro-btn">
-            Escolher
-          </button>
-        </div>
-      </div>
-      <div id="filtro03">
-        <p class="title-filters">Tipo</p>
-
-
-        <div class="filtro-container03">
-          <button class="filtro-btn orange-filter">
-            Categoria
-          </button>
-        </div>
-      </div>
-      <div id="filtro04">
-        <p class="title-filters">Avaliação</p>
-
-
-        <div class="filtro-container04">
-          <button class="filtro-btn">
-            Escolher
-          </button>
-        </div>
-      </div>
-      <div id="filtro05">
-        <p class="title-filters">Localização</p>
-
-
-        <div class="filtro-container05">
-          <button class="filtro-btn orange-filter">
-            Distância
-          </button>
-        </div>
-      </div>
+  <div class="banner-homepage">
+    <div class="banner-grid">
+      <div class="title-banner">
+        <h1>Procure um serviço</h1>
+        <h1 id="title-2-banner">Próximo a você</h1>
       </div>
 
 
+      <div class="buttons">
 
 
+        <button id="botao-explorar-criar" onclick="explorarConfirmar()">
+          Explorar
+        </button>
 
-
-      <!-- POSTAGENS -->
+        <button id="botao-explorar-criar" onclick="criarConfirmar()">
+          Crie um Post
+        </button>
+      </div>
     </div>
-  </body>
+  </div>
+  </div>
+
+
+
+
+  
+
+
+
+    <!-- POSTAGENS -->
+  </div>
+</body>
+
 </html>
