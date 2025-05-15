@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Mukta Malar', sans-serif;
 }
 
 html,
@@ -14,6 +15,10 @@ body {
   overflow-x: hidden;
 }
 
+.container{
+  max-width: 1450px;
+  margin-inline: auto;
+}
 .header-homepage {
   background-color: black;
   width: 100%;
