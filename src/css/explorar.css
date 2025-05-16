@@ -71,6 +71,7 @@
 }
 .categorias-title{
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 .categorias-grid{
     display: grid;
@@ -81,8 +82,8 @@
     background-color: #d9d9d9;
     border-radius: 20px;
     padding: 20px;
-    width: 300px;
-    height: 160px;
+    width: 340px;
+    height: 190px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,3 +91,48 @@
     font-size: 20px;
     color: white;
 }
+
+.destaques-container{
+    display: flex;
+    flex-direction: row;
+    gap: 9.5%;
+    
+}
+
+.pessoa-destaque{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+#pessoa1{
+    background-image: url(../../assets/img/pessoa1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#pessoa2{
+    background-image: url(../../assets/img/pessoa2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#pessoa3{
+    background-image: url(../../assets/img/pessoa3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#pessoa4{
+    background-image: url(../../assets/img/pessoa4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#pessoa5{
+    background-image: url(../../assets/img/pessoa5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.espaco{
+    height: 500px;
+}
+
