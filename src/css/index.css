@@ -93,6 +93,7 @@ body {
   background-color: #FF8800;
   color: white;
   transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
 
 /* FILTROS */
@@ -274,7 +275,7 @@ body {
 .postagem {
     background-color: #fff;
     border: none;
-    box-shadow: 0px 8px 20px 0px black;
+    box-shadow: 0px 1px 20px 0px black;
 
     border-radius: 30px;
 }
