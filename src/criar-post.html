@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Post</title>
+
+    <link rel="stylesheet" href="./css/criar-post.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="parte-laranja">
+        <h1>Criar Post</h1>
+
+        <label class="upload-botao" for="upload-foto">Foto</label>
+        <input type="file" id="upload-foto" accept="image/*">
+
+        <div class="checkbox">
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" id="checkbox-titulo-01">
+                        <span>Material fornecido?</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="checkbox-01">
+                        <span>Serviço para hoje?</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="checkbox-01">
+                        <span>Haverá pessoas no local?</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="checkbox-01">
+                        <span>Haverá animais no local?</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <button type="submit" class="submit-btn" onclick="mostrarMensagem()" >
+            <p>Postar</p>
+            <img src="../assets/img/abelha-botao0.svg" alt="Abelha">
+        </button>
+    </div>
+
+
+    <div class="parte-branca">
+        <div class="form-container">
+
+
+            <div class="form-group">
+                <h2 class="titulo-01">Título:</h2>
+
+                <input type="text" id="titulo" name="titulo" placeholder="Digite o título" required>
+            </div>
+
+            <div class="form-group">
+                <h2 class="titulo-01">Descrição</h2>
+                <textarea id="descricao" name="descricao" rows="4" placeholder="Digite uma descrição"
+                    required></textarea>
+            </div>
+
+            <div class="form-group">
+                <h2 class="titulo-01">Categoria</h3>
+
+                    <select id="categoria" name="categoria">
+                        <option value="">Limpeza</option>
+                        <option value="eletrica">Elétrica</option>
+                        <option value="encanamento">Encanamento</option>
+                        <option value="pintura">Pintura</option>
+                        <option value="reparos">Reparos Gerais</option>
+                    </select>
+            </div>
+
+            <div class="time-input">
+                <h2 class="titulo-01">Horas de Serviço</h2>
+
+                <input type="number" id="horas" name="horas" min="0" max="99" value="00"> horas :
+                <input type="number" id="minutos" name="minutos" min="0" max="59" value="00"> minutos
+            </div>
+
+            <div class="titulo-01">Preço</div>
+
+            <div class="slider-container">
+                
+                <div class="slider-wrapper">
+                    <div id="slider-value">R$ 500</div>
+                    <input type="range" id="slider" min="0" max="1000" step="1" value="500">
+                </div>                  
+
+            <div class="form-group" id="cep">
+                <h2 class="titulo-01">Endereço</h2>
+
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" placeholder="Ex: 12345-678" pattern="\d{5}-\d{3}">
+
+
+                <div class="endereco-itens">
+
+                    <div class="form-group">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" name="bairro" placeholder="Dígite o bairro">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rua">Rua</label>
+                        <input type="text" id="rua" name="rua" placeholder="Dígite a rua">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numero">Número</label>
+                        <input type="text" id="numero" name="numero" placeholder="Ex: 123">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" name="complemento" placeholder="Dígite aqui o complemento">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="mensagem-post-criado">Post criado com sucesso!</div>
+
+</body>
+<script src="./scripts/scripts.js"></script>
+
+</html>
