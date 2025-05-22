@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta Malar', sans-serif;
+  }
+  
+  .footer {
+    background-color: #262626;
+    padding: 30px 0;
+    color: white;
+  
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 150px;
+  }
+  
+  .footer-col h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .footer-col h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 160px;
+    height: 2px;
+    background-color: orange;
+  }
+  
+  .sobre-nos {
+    text-decoration: underline;
+  }
+  
+  .atend {
+    text-decoration: none;
+  }
+
+  .telefone-footer {  
+    font-size: 20px;    
+    font-weight: 400;
+    line-height: 1.6;  
+    margin: 13px 0px;  
+    font-family: 'Mukta Malar', sans-serif;  
+  }
+  
+  .footer-col a {
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;
+    margin-top: auto;
+  }
+  
+  .footer-col a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-col img[alt="Logo"] {
+    margin-top: -29px;
+    width: 80px;
+    margin-left: -17px; 
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-icons img {
+    width: 50px;
+    margin-top: -2px;
+    margin-left: -10px;
+  }
+  
+  .footer-col .copyright {
+    font-size: x-small;
+    margin-top: -10px;
+  }
+  
+
+  

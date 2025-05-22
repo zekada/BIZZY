@@ -45,4 +45,6 @@ slider.addEventListener("input", updateSliderValue);
     }, 2500); // 4 segundos
   }
 
-// foto
+   function pesquisaConfirmar() {
+    window.location.href = "../index.html";
+  }
