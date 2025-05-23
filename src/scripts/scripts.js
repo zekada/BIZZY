@@ -48,3 +48,21 @@ slider.addEventListener("input", updateSliderValue);
    function pesquisaConfirmar() {
     window.location.href = "../index.html";
   }
+
+  // criar post
+  const input = document.getElementById('upload-foto');
+  const label = document.getElementById('preview-label');
+
+  input.addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    if (file && file.type.startsWith('image/')) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        label.innerHTML = ''; // Limpa o texto
+        const img = document.createElement('img');
+        img.src = e.target.result;
+        label.appendChild(img);
+      };
+      reader.readAsDataURL(file);
+    }
+  });
