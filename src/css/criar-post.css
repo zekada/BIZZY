@@ -54,7 +54,7 @@ body {
   width: 450px;
   height: 260px;
   font-size: 20px;
-  background-color: var(--cinza);
+  background-color: white;
   color: var(--laranja);
   border-radius: 16px;
   cursor: pointer;
@@ -247,7 +247,7 @@ textarea {
   height: 70px;
   align-items: center;
   cursor: pointer;
-  background-color: var(--cinza);
+  background-color: white;
 }
 
 .submit-btn p {

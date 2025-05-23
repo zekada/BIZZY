@@ -3,11 +3,11 @@ function continuarcadastro() {
 }
 
 function irParaExplorar() {
-    window.location.href = "src/explorar.html"; 
+    window.location.href = "explorar.html"; 
 }
 
 function criarConfirmar() {
-    window.location.href = "src/criar-post.html";
+    window.location.href = "criar-post.html";
 }
 
 // CRIAR POST //
