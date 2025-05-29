@@ -1,0 +1,84 @@
+
+body {
+    overflow: hidden;
+}
+.logo-header {
+    left: 3%;
+}
+
+.search-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search-input {
+    width: 800px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+    border: none;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Fredoka';
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-icon {
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+}
+
+.feed-page{
+display: flex;
+flex-direction: row;
+width: 100%;
+}
+
+.work-contract-container{
+    flex: 1;
+    border-right: 1px solid #ccc;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.feed-container{
+flex: 3;
+}
+
+.categories-container{
+flex: 1;
+border-left: 1px solid #ccc;
+height: 100vh;
+}
+
+.work-contract{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.work, .contract{
+    color: #fff;
+    background-color: #ff8800;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 70px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
