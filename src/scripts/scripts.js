@@ -41,12 +41,12 @@ slider.addEventListener("input", updateSliderValue);
     msg.style.opacity = '1';
 
     setTimeout(() => {
-      msg.style.opacity = '0'; window.location.href='../index.html';
+      msg.style.opacity = '0'; window.location.href='feed.html';
     }, 2500); // 4 segundos
   }
 
    function pesquisaConfirmar() {
-    window.location.href = "../index.html";
+    window.location.href = "feed.html";
   }
 
   // criar post

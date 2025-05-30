@@ -9,11 +9,13 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+::-webkit-scrollbar{
+  display: none;
 }
 
-body {
-  overflow-x: hidden;
-}
 
 .container{
   max-width: 1450px;
@@ -214,7 +216,7 @@ body {
   text-decoration: none;
   color: white;
   background-color: #ff8800;
-  padding: 5px 15px;
+  padding: 5px 30px;
   border-radius: 20px;
   font-size: 16px;
   transition: 0.3s;
@@ -238,7 +240,13 @@ body {
 
 
 .header-homepage .logo {
-  width: 90px
+  width: 90px;
+  height: 100%;
+}
+
+.logo-header a {
+  display: flex;
+  align-items: center;
 }
 
 .logo-header {
@@ -255,115 +263,9 @@ body {
 /* POSTAGENS */
 
 
-.posts {
-  height: 1000px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/*Final posts*/
 
-  background-color: #FAFAFA;
-}
 
-.postArea {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 50px;
-
-  width: 80%;
-  height: 250px;
-
-  margin-bottom: 150px;
-}
-
-.postagem {
-    background-color: #fff;
-    border: none;
-    box-shadow: 0px 1px 20px 0px black;
-
-    border-radius: 30px;
-}
-
-.postArea-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-
-  padding: 30px;
-}
-
-.serv-post {
-  height: 500px;
-  width: 50%;
-  padding: 30px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  gap: 30px;
-}
-
-.noti-post {
-  width: 80%;
-  border-radius: 50px !important;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  gap: 30px;
-}
-
-.interacoes-postArea {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row !important;
-  align-items: center;
-}
-
-.user-post {
-  display: flex;
-  flex-direction: row !important;
-  align-items: flex-end;
-  justify-content: center;
-
-  gap: 5px;
-}
-
-.imgUser-post {
-  background-color: rgb(202, 202, 202);
-  width: 30px;
-  height: 30px;
-
-  border-radius: 50%;
-}
-
-.interacoes {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-
-  gap: 10px;
-}
-
-.username-post {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
-}
-
-.verificado {
-  background-color: #FF8800;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
 
 .perfil-avaliacao {
   display: flex;

@@ -1,11 +1,4 @@
 
-body {
-    overflow: hidden;
-}
-.logo-header {
-    left: 3%;
-}
-
 .search-input-container {
     display: flex;
     justify-content: center;
@@ -47,38 +40,152 @@ width: 100%;
 
 .work-contract-container{
     flex: 1;
-    border-right: 1px solid #ccc;
     height: 100vh;
     display: flex;
     justify-content: center;
 }
 .feed-container{
 flex: 3;
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
 }
 
 .categories-container{
 flex: 1;
-border-left: 1px solid #ccc;
 height: 100vh;
 }
 
 .work-contract{
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 300px;
+    width: 100%;
+
 }
 
 .work, .contract{
     color: #fff;
     background-color: #ff8800;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10px;
-    width: 200px;
-    height: 70px;
+    width: 180px;
+    height: 90px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    line-height: 18px;
 }
+
+.contract:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+.work:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.post-container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    padding: 16px;
+    margin: 40px auto;
+    max-width: 800px;
+    gap: 20px;
+
+    overflow-y: auto;
+
+    /* Ocultar visualmente a barra de rolagem */
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE e Edge antigos */
+  }
+  
+  .post-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .post-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .post-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .post-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #262626;
+  }
+  
+  .post-category {
+    background: linear-gradient(to right, #FFA947, #FF8800);
+    color: white;
+    padding: 4px 26px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .post-description {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+  }
+  
+  .post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .post-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .post-user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .user-avatar {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  
+  .post-urgent {
+    color: #ff8c00;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-urgent-img{
+    width: 50px;
+    height: 50px;
+  }
+
 
