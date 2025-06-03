@@ -66,3 +66,32 @@ slider.addEventListener("input", updateSliderValue);
       reader.readAsDataURL(file);
     }
   });
+
+  function abrirMenu() {
+    const menuOpcoes = document.querySelector('.menu-opcoes');
+    const direita = document.querySelector('.direita');
+
+    // Alternar a exibição
+    if (menuOpcoes.style.display === 'block') {
+        menuOpcoes.style.display = 'none';
+    } else {
+        menuOpcoes.style.display = 'block';
+
+        // Adiciona o listener para clique fora
+        document.addEventListener('click', fecharMenuFora, true);
+    }
+}
+
+function fecharMenuFora(event) {
+    const menuOpcoes = document.querySelector('.menu-opcoes');
+    const direita = document.querySelector('.direita');
+
+    // Se clicou fora do menu e fora do botão
+    if (!menuOpcoes.contains(event.target) && !direita.contains(event.target)) {
+        menuOpcoes.style.display = 'none';
+        document.removeEventListener('click', fecharMenuFora, true);
+    }
+}
+
+
+  
