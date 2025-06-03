@@ -1,13 +1,13 @@
 function continuarcadastro() {
-    window.location.href = "cadastro2.html"; 
+  window.location.href = "cadastro2.html";
 }
 
 function irParaExplorar() {
-    window.location.href = "explorar.html"; 
+  window.location.href = "explorar.html";
 }
 
 function criarConfirmar() {
-    window.location.href = "criar-post.html";
+  window.location.href = "criar-post.html";
 }
 
 // CRIAR POST //
@@ -36,36 +36,52 @@ function updateSliderValue() {
 slider.addEventListener("input", updateSliderValue);
 
 // msg
-  function mostrarMensagem() {
-    const msg = document.getElementById('mensagem-post-criado');
-    msg.style.opacity = '1';
+function mostrarMensagem() {
+  const msg = document.getElementById('mensagem-post-criado');
+  msg.style.opacity = '1';
 
-    setTimeout(() => {
-      msg.style.opacity = '0'; window.location.href='feed.html';
-    }, 2500); // 4 segundos
+  setTimeout(() => {
+    msg.style.opacity = '0'; window.location.href = 'feed.html';
+  }, 2500); // 4 segundos
+}
+
+function pesquisaConfirmar() {
+  window.location.href = "feed.html";
+}
+
+// criar post
+const input = document.getElementById('upload-foto');
+const label = document.getElementById('preview-label');
+
+input.addEventListener('change', function (event) {
+  const file = event.target.files[0];
+  if (file && file.type.startsWith('image/')) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      label.innerHTML = ''; // Limpa o texto
+      const img = document.createElement('img');
+      img.src = e.target.result;
+      label.appendChild(img);
+    };
+    reader.readAsDataURL(file);
   }
+});
 
-   function pesquisaConfirmar() {
-    window.location.href = "feed.html";
-  }
+function irParaPost() {
+  let post = document.querySelector(".container-info-post");
+  let postContainer = document.getElementById("container-tela-volta");
+  post.style.display = "flex";
+  postContainer.style.display = "flex";
+}
 
-  // criar post
-  const input = document.getElementById('upload-foto');
-  const label = document.getElementById('preview-label');
 
-  input.addEventListener('change', function (event) {
-    const file = event.target.files[0];
-    if (file && file.type.startsWith('image/')) {
-      const reader = new FileReader();
-      reader.onload = function (e) {
-        label.innerHTML = ''; // Limpa o texto
-        const img = document.createElement('img');
-        img.src = e.target.result;
-        label.appendChild(img);
-      };
-      reader.readAsDataURL(file);
-    }
-  });
+function voltarTela() {
+  let post = document.querySelector(".container-info-post");
+  let postContainer = document.getElementById("container-tela-volta");
+  post.style.display = "none";
+  postContainer.style.display = "none";
+}
+
 
   function abrirMenu() {
     const menuOpcoes = document.querySelector('.menu-opcoes');

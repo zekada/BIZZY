@@ -27,20 +27,23 @@
 </head>
 
 <body>
+  <div id="container-tela-volta"
+    style="width: 100%; height: 100%; position: absolute; display: none; background-color: rgba(0, 0, 0, 0.507);"
+    onclick="voltarTela()"></div>
   <header class="header-homepage">
     <div class="direita" onclick="abrirMenu()">
       <span class="menu1"></span>
       <span class="menu2"></span>
       <span class="menu3"></span>
     </div>
-   
+
 
     <div class="logo-header">
       <a href="#">
         <img class="logo" src="../assets/img/logo-branca.svg" alt="Logo Bizzy" />
       </a>
     </div>
-    
+
 
 
     <div class="botoes-header">
@@ -59,6 +62,78 @@
       <li>Política e Privacidade</li>
       <li>Termos e Condições</li>
     </ul>
+  </div>
+
+  <div class="container-info-post" id="container-info-post1">
+    <div class="centro">
+      <div class="usuario-nome">
+        <img src="assets/img/pessoa3.jpg" alt="">
+        <p>João Silva</p>
+      </div>
+      <div class="info-post">
+        <div class="img-banner-post"></div>
+        <div class="titulo-categoria">
+          <h1>Título</h1>
+          <p class="categoria">Limpeza</p>
+        </div>
+
+
+        <p id="p-desc"> Neste post, vamos explorar as melhores práticas para criar um site que não
+          apenas atraia visitantes, mas também os mantenha engajados. Desde o design responsivo até a
+          otimização para SEO, cobriremos tudo o que você precisa saber.</p>
+
+
+        <div class="info-detalhes">
+          <span>Av. Amazonas, 794, Indaiá</span>
+          <span>50 min - 2h</span>
+        </div>
+      </div>
+
+
+      <div class="detalhes-servico">
+
+
+        <div class="grid-post">
+          <div class="trabalho-info01">
+            <div id="materialFornecido">
+              <img src="" alt="">
+              <span>Material Fornecido</span>
+            </div>
+
+
+            <div id="servicoHoje">
+              <img src="" alt="">
+              Serviço para hoje
+            </div>
+          </div>
+          <div class="trabalho-info02">
+            <div id="pessoasLocal"><span> <u>Não haverá</u> pessoas no local </span></div>
+            <div id="animaisLocal"><span> <u>Haverá</u> animais no local </span></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="interesse-post">
+        <div class="valor">
+          <p>R$70,00</p>
+        </div>
+
+
+        <div class="flex-interesse">
+          <span id="interesse-title"><strong>Está Interessado?</strong></span>
+
+
+          <span id="noti-interesse">Envie uma notificação para o usuario</span>
+
+
+          <button class="btn-interesse">Quero trabalhar!</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
   </div>
 
 
@@ -82,7 +157,8 @@
     <div class="feed-container">
 
 
-      <div class="post-container">
+      <div class="post-container" id="post-container1" onclick=" irParaPost()">
+
         <img src="../assets/img/towfiqu-barbhuiya--9gPKrsbGmc-unsplash.jpg" alt="Imagem do serviço"
           class="post-image" />
 
@@ -110,7 +186,7 @@
         </div>
       </div>
 
-      <div class="post-container">
+      <div class="post-container" onclick=" irParaPost()">
         <img src="../assets/img/towfiqu-barbhuiya--9gPKrsbGmc-unsplash.jpg" alt="Imagem do serviço"
           class="post-image" />
 
@@ -138,7 +214,7 @@
         </div>
       </div>
 
-      <div class="post-container">
+      <div class="post-container" onclick=" irParaPost()">
         <img src="../assets/img/towfiqu-barbhuiya--9gPKrsbGmc-unsplash.jpg" alt="Imagem do serviço"
           class="post-image" />
 
@@ -166,7 +242,7 @@
         </div>
       </div>
 
-      <div class="post-container">
+      <div class="post-container" onclick=" irParaPost()">
         <img src="../assets/img/towfiqu-barbhuiya--9gPKrsbGmc-unsplash.jpg" alt="Imagem do serviço"
           class="post-image" />
 
@@ -194,7 +270,7 @@
         </div>
       </div>
 
-      <div class="post-container">
+      <div class="post-container" onclick=" irParaPost()">
         <img src="../assets/img/towfiqu-barbhuiya--9gPKrsbGmc-unsplash.jpg" alt="Imagem do serviço"
           class="post-image" />
 
@@ -222,7 +298,7 @@
         </div>
       </div>
 
-      <div class="post-container">
+      <div class="post-container" onclick=" irParaPost()">
         <img src="../assets/img/towfiqu-barbhuiya--9gPKrsbGmc-unsplash.jpg" alt="Imagem do serviço"
           class="post-image" />
 
@@ -250,7 +326,7 @@
         </div>
       </div>
 
-      <div class="post-container">
+      <div class="post-container" onclick=" irParaPost()">
         <img src="../assets/img/towfiqu-barbhuiya--9gPKrsbGmc-unsplash.jpg" alt="Imagem do serviço"
           class="post-image" />
 
@@ -280,8 +356,71 @@
 
 
     </div>
-    <div class="categories-container">
-      <!-- Catilanga insere as merdas das categorias pfvr AQQQ, OBRIGADO!!!!! -->
+
+    <div class="agenda-container">
+      <div class="agenda-title">
+        Sua semana
+      </div>
+      <div class="agenda-place">
+        <div class="agenda">
+          <div class="dia-semana">
+            <div class="dia-name" id="domingo">
+              Domingo
+            </div>
+            <div class="quantidade-tarefas">
+              0
+            </div>
+          </div>
+          <div class="dia-semana">
+            <div class="dia-name" id="segunda">
+              Segunda-feira
+            </div>
+            <div class="quantidade-tarefas">
+              0
+            </div>
+          </div>
+          <div class="dia-semana">
+            <div class="dia-name" id="terca">
+              Terça-feira
+            </div>
+            <div class="quantidade-tarefas">
+              3
+            </div>
+          </div>
+          <div class="dia-semana">
+            <div class="dia-name" id="quarta">
+              Quarta-feira
+            </div>
+            <div class="quantidade-tarefas">
+              1
+            </div>
+          </div>
+          <div class="dia-semana">
+            <div class="dia-name" id="quinta">
+              Quinta-feira
+            </div>
+            <div class="quantidade-tarefas">
+              0
+            </div>
+          </div>
+          <div class="dia-semana">
+            <div class="dia-name" id="sexta">
+              Sexta-feira
+            </div>
+            <div class="quantidade-tarefas">
+              2
+            </div>
+          </div>
+          <div class="dia-semana">
+            <div class="dia-name" id="sabado">
+              Sábado
+            </div>
+            <div class="quantidade-tarefas">
+              0
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
