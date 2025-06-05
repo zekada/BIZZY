@@ -49,6 +49,16 @@
   right: 3%;
 }
 
+.search{
+  color: white;
+  font-size: 25px;
+  margin-right: 10px;
+  transition: 0.3s ease-in-out;
+}
+.search:hover {
+  color: #FF8800;
+}
+
 /* ------------------ CONTEÚDO PRINCIPAL ------------------ */
 .work-contract-container {
   flex: 1;
@@ -56,18 +66,18 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
+  background-color: #f0f0f0;
 }
 
 .feed-container {
   flex: 3;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
 
+  background-color: #fafafa;
   height: 100vh;        
   overflow-y: auto;      
 
   scrollbar-width: thin;
-  scrollbar-color: #FF8800 #f0f0f0;
+  scrollbar-color: #FF8800 #fafafa;
 }
 
 .agenda-container {
@@ -75,11 +85,14 @@
   display: flex;
   justify-content: center;
   background-color: #f0f0f0;
+  overflow-y: auto;
 }
 
 .week-section {
   margin: 20px 0;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .week-title {
@@ -90,8 +103,8 @@
 
 .week-carousel {
   display: flex;
-  gap: 15px;
-  overflow-x: auto;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .week-card {
@@ -101,7 +114,7 @@
   width: 300px;
   flex-shrink: 0;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: 0.15s;
 }
 
 .week-card:hover {
@@ -162,6 +175,7 @@
   gap: 40px;
   width: 100%;
   height: 300px;
+  border-bottom: 1px solid #ccc;
 }
 
 .work,

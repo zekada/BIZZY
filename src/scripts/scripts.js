@@ -58,7 +58,7 @@ input.addEventListener('change', function (event) {
   if (file && file.type.startsWith('image/')) {
     const reader = new FileReader();
     reader.onload = function (e) {
-      label.innerHTML = ''; // Limpa o texto
+      label.innerHTML = ''; 
       const img = document.createElement('img');
       img.src = e.target.result;
       label.appendChild(img);
@@ -70,7 +70,18 @@ input.addEventListener('change', function (event) {
 function irParaPost() {
   let post = document.querySelector(".container-info-post");
   let postContainer = document.getElementById("container-tela-volta");
+  let interesse = document.querySelector(".flex-interesse");
   post.style.display = "flex";
+  interesse.style.display = "flex";
+  postContainer.style.display = "flex";
+}
+
+function verInfo(){
+  let post = document.querySelector(".container-info-post");
+  let postContainer = document.getElementById("container-tela-volta");
+  let interesse = document.querySelector(".flex-interesse");
+  post.style.display = "flex";
+  interesse.style.display = "none";
   postContainer.style.display = "flex";
 }
 
