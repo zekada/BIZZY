@@ -32,6 +32,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
+    margin-top: 200px;
 }
 
 .flex-confirm {
@@ -122,17 +124,16 @@ body {
 
 #title-cadastro {
     font-size: 65px;
-
-    margin-bottom: 2rem;
 }
-
 
 .title-input {
     font-weight: 600;
 }
+
 .active {
     background-color: #FF8800;
 }
+
 body {
     overflow: hidden;
     width: 100%;

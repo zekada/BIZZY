@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,68 +10,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
     <link rel="icon" href="../assets/img/abelha-laranja.png">
 
     <title>Bizzy - Cadastro</title>
 </head>
+
 <body>
- 
-    
+
+
     <div class="container-cadastro container">
-        
+
 
         <div class="flex-cadastro">
-           
-            <div class="form-cadastro">
+            <form class="form-cadastro" onsubmit="return continuarcadastro()">
                 <h1 id="title-cadastro">Cadastro</h1>
 
-                <p class="title-input">Nome Completo</p>
-                <input placeholder="Digite seu nome completo..." type="text" class="input-cadastro" id="nome-completo-cadastro">
+                <div class="form-cadastro-item">
+                    <p class="title-input">Nome Completo</p>
+                    <input placeholder="Digite seu nome completo..." type="text" class="input-cadastro"
+                        id="nome-completo-cadastro" required>
+                </div>
 
-                <p class="title-input">E-mail</p>
-                <input placeholder="Digite seu e-mail..." type="email" class="input-cadastro" id="email-cadastro">
+                <div class="form-cadastro-item">
+                    <p class="title-input">E-mail</p>
+                    <input placeholder="Digite seu e-mail..." type="email" class="input-cadastro" id="email-cadastro"
+                        required>
+                </div>
 
-                <p class="title-input" id="senha-input-title">Senha</p>
-                <input placeholder="Digite sua senha..." type="password" class="input-cadastro" id="senha-cadastro">
+                <div class="form-cadastro-item">
+                    <p class="title-input" id="senha-input-title">Senha</p>
+                    <input placeholder="Digite sua senha..." type="password" class="input-cadastro" id="senha-cadastro"
+                        required>
+                </div>
 
-                <p class="title-input">Confirmar Senha</p>
-                <input placeholder="Confirme sua senha..." type="password" class="input-cadastro" id="confirmar-senha-cadastro">
+                <div class="form-cadastro-item">
+                    <p class="title-input">Confirmar Senha</p>
+                    <input placeholder="Confirme sua senha..." type="password" class="input-cadastro"
+                        id="confirmar-senha-cadastro" required>
+                </div>
 
                 <div class="flex-confirm">
-                    <div class="flex-confirm-esquerda">
-                            <a href="login.html">Já tenho conta</a>
-                    </div>
-
                     <div class="flex-confirm-centro">
                         <div class="pass-circles">
-                        <div id="pass01" class="passCircle active">
-
-                        </div>
-                        <div id="pass02" class="passCircle non-active">
-                        </div>
-
+                            <div id="pass01" class="passCircle active"></div>
+                            <div id="pass02" class="passCircle non-active"></div>
                         </div>
                     </div>
 
                     <div class="flex-confirm-direita">
-                        
-                        <button onclick="continuarcadastro()" id="continuar-cadastro">
+                        <button type="button" onclick="window.location.href='cadastro2.html'" id="continuar-cadastro">
                             Continuar
                         </button>
                     </div>
                 </div>
-            </div>
+            </form>
 
             <div class="cadastro-img">
                 <img src="../assets/img/bonecos.svg" alt="" width="800px">
             </div>
         </div>
     </div>
-    
 
     <script src="scripts/scripts.js"></script>
 </body>
+
 </html>

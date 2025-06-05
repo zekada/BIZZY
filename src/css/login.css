@@ -72,9 +72,15 @@ body {
     background-color: #D9D9D9;
 }
 
-.flex-confirm-esquerda {
+.flex-confirm-esquerda a{
     width: 138.05px;
     height: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.flex-confirm-esquerda a:hover {
+    text-decoration: underline;
 }
 
 #continuar-login {
@@ -83,7 +89,6 @@ body {
     color: white;
     padding: 6px 30px;
     border-radius: 10px;
-
     font-size: 18px;
     font-weight: 500;
 }
@@ -94,7 +99,6 @@ body {
 
 #title-login {
     font-size: 65px;
-
     margin-bottom: 2rem;
 }
 
