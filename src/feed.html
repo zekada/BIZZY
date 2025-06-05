@@ -49,8 +49,8 @@
     <div class="botoes-header">
       <a href="#"><i class='bx bxs-conversation'></i></a>
       <a href="#"><i class='bx bxs-bell'></i></a>
-      <a class="verify" href="src/cadastro.html">Entrar</a></a>
-      <a class="profile" href="src/perfil.html"><img class="profilepic" src="../assets/img/usuarioprofile.svg"
+      <a class="verify" href="cadastro.html">Entrar</a></a>
+      <a class="profile" href="perfil.html"><img class="profilepic" src="../assets/img/usuarioprofile.svg"
           alt="Perfil"></a>
     </div>
 
@@ -127,7 +127,7 @@
           <span id="noti-interesse">Envie uma notificação para o usuario</span>
 
 
-          <button class="btn-interesse">Quero trabalhar!</button>
+          <button class="btn-interesse" onclick="aceitarTarefa()">Quero trabalhar!</button>
         </div>
       </div>
     </div>
@@ -141,13 +141,13 @@
     <div class="work-contract-container">
       <div class="work-contract">
         <div class="work" onclick="irParaExplorar()">
-          <i class='bx  bx-clipboard-check'
-            style='color:#ffffff; font-size: 30px; margin-left: 15px; margin-right: 10px;'></i>
+          <i class='bx  bx-clipboard-check icon-work'
+           ></i>
           Procure um serviço
         </div>
         <div class="contract" onclick="criarConfirmar()">
-          <i class='bx  bx-pen-draw'
-            style='color:#ffffff; font-size: 30px; margin-left: 15px;  margin-right: 10px;'></i>
+          <i class='bx  bx-pen-draw icon-contract'
+            ></i>
           Ofereça um serviço
         </div>
       </div>
@@ -358,71 +358,31 @@
     </div>
 
     <div class="agenda-container">
-      <div class="agenda-title">
-        Sua semana
-      </div>
-      <div class="agenda-place">
-        <div class="agenda">
-          <div class="dia-semana">
-            <div class="dia-name" id="domingo">
-              Domingo
-            </div>
-            <div class="quantidade-tarefas">
-              0
-            </div>
-          </div>
-          <div class="dia-semana">
-            <div class="dia-name" id="segunda">
-              Segunda-feira
-            </div>
-            <div class="quantidade-tarefas">
-              0
+      <div class="week-section">
+        <h2 class="week-title">Sua Semana</h2>
+        <div class="week-carousel">
+          <div class="week-card" onclick="irParaPost()">
+            <img src="../assets/img/towfiqu-barbhuiya--9gPKrsbGmc-unsplash.jpg" alt="Imagem do serviço" class="week-image" />
+            <div class="week-content">
+              <h3 class="week-service-title">Limpeza de escritório</h3>
+              <p class="week-description">Preciso de alguém para limpar a garagem e o escritório da minha casa.</p>
+              <span class="week-price">R$70,00</span>
+              <div class="week-user-info">
+                <span class="week-user-name">Marcelão Faria</span>
+                <span class="week-urgent">
+                  <img src="../assets/img/6.png" alt="" class="week-urgent-img">
+                  <p>Serviço pra hoje!</p>
+                </span>
+              </div>
             </div>
           </div>
-          <div class="dia-semana">
-            <div class="dia-name" id="terca">
-              Terça-feira
-            </div>
-            <div class="quantidade-tarefas">
-              3
-            </div>
-          </div>
-          <div class="dia-semana">
-            <div class="dia-name" id="quarta">
-              Quarta-feira
-            </div>
-            <div class="quantidade-tarefas">
-              1
-            </div>
-          </div>
-          <div class="dia-semana">
-            <div class="dia-name" id="quinta">
-              Quinta-feira
-            </div>
-            <div class="quantidade-tarefas">
-              0
-            </div>
-          </div>
-          <div class="dia-semana">
-            <div class="dia-name" id="sexta">
-              Sexta-feira
-            </div>
-            <div class="quantidade-tarefas">
-              2
-            </div>
-          </div>
-          <div class="dia-semana">
-            <div class="dia-name" id="sabado">
-              Sábado
-            </div>
-            <div class="quantidade-tarefas">
-              0
-            </div>
-          </div>
+          <!-- Adicione mais week-card conforme necessário -->
         </div>
       </div>
     </div>
   </div>
+
+  <div id="tarefa-aceita">Tarefa adiconada na agenda</div>
 
 
   <script src="scripts/scripts.js"></script>

@@ -109,5 +109,13 @@ function fecharMenuFora(event) {
     }
 }
 
+function aceitarTarefa() {
+  const trf = document.getElementById('tarefa-aceita');
+  trf.style.opacity = '1';
+
+  setTimeout(() => {
+    trf.style.opacity = '0'; window.location.href = 'feed.html';
+  }, 2500); // 4 segundos
+}
 
   
