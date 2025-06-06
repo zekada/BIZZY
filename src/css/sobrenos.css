@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+.missao,
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+    padding: 80px 0;
+}
+
+.linha-tempo {
+    width: 5px;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 40px;
+    top: 0;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 15%;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.indent {
+    display: block;
+    text-indent: 30px;
+}
+
+.titulo {
+    color: #FF8800;
+}
+
+.botao-missao {
+    background-color: #333;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.mis-fotos,
+.hist-fotos {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.mis-laranja,
+.hist-laranja {
+    background-color: orange;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.foto-grupo,
+.grupo {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 90%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.equipe {
+    padding: 70px 0 110px 0;
+}
+
+#title-03 {
+    text-align: center;
+    padding: 65px;
+}
+
+.cada-um {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    padding: 0 10%;
+}
+
+.unidade {
+    text-align: center;
+}
+
+.unidade img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* ----------- FOOTER ------------ */
+  
+.footer {
+  background-color: #262626;
+  padding: 30px 0;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+  gap: 50px; 
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 150px;
+  gap: 4px; /* Espaçamento menor entre os itens */
+}
+
+.footer-col h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.footer-col h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 120px;
+  height: 2px;
+  background-color: orange;
+}
+
+.atend {
+  text-decoration: none;
+}
+
+.telefone-footer {
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 8px 0;  /* Menor espaçamento */
+  font-family: 'Mukta Malar', sans-serif;
+}
+
+.footer-col a {
+  font-size: 16px;
+  color: white;
+  margin: 3px 0; /* Menor espaçamento */
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-col img[alt="Logo"] {
+  width: 50px; 
+  margin-top: 0;
+  margin-left: 0; 
+}
+
+/* MANTIDO do jeito que estava */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 50px;
+  margin-top: -2px;
+  margin-left: -10px;
+}
+
+.footer-col .copyright {
+  font-size: x-small;
+  margin-top: -10px;
+}
+
